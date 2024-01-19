@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHRI BALAJI CREDIT SOCITY</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1 class="company-name">Your Company Name</h1>
+        <div class="loan-details">
+            <h2>Loan Details</h2>
+            <p>Loan Amount: 10,000</p>
+            <p>Interest Rate: 2%</p>
+            <p>Due Date: January 31, 2024</p>
+            <!-- <button class="get-loan-btn" onclick="redirectToGetLoanPage()">Get a Loan></button> -->
+             <!-- Add a link to the Get Loan page -->
+            <a href="get_loan.html" class="get-loan-btn">Get a Loan</a>
+        </div>
+        <div class="settings-container">
+            <button class="settings-option change-username-btn" onclick="changeUsername()">Change Username</button>
+            <button class="settings-option change-email-btn" onclick="changeEmail()">Change Email</button>
+            <button class="settings-option logout-btn" onclick="logout()">Logout</button>
+            <button class="settings-option help-btn" onclick="help()">Help</button>
+        </div>
+        <img src="https://th.bing.com/th?id=OIP.hqSlC3ulfS4en0zboE9BogHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Profile Picture" class="profile-picture" onclick="toggleSettings()">
+    </div>
+    <!-- <div class="loan-form-container" id="loanFormContainer">
+        <form id="loanForm" onsubmit="submitLoanForm(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" required>
+
+            <label for="installmentDuration">Installment Duration (months):</label>
+            <select id="installmentDuration" required>
+                <option value="6">6 months</option>
+                <option value="12">12 months</option>
+                <option value="24">24 months</option>
+                <option value="36">36 months</option>
+                <option value="48">48 months</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div> -->
+
+    <!-- Add a modal for displaying the loan amount -->
+    <div class="modal" id="loanModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoanModal()">&times;</span>
+            <h2>Loan Request Submitted</h2>
+            <p>Your loan request has been submitted successfully. The loan amount to be paid is: <span id="loanAmountDisplay"></span></p>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

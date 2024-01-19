@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - SHRI BALAJI CREDIT SOCITY</title>
+    <link rel="stylesheet" href="create-account.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form id="createAccountForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Re-enter Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="button" onclick="createAccount()">Continue</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="create-account.js"></script>
+</body>
+</html>
