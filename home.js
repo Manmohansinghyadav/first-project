@@ -73,6 +73,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const loanAmountDisplay = document.getElementById('loanAmountDisplay');
         loanAmountDisplay.textContent = `$${amount}`;
     }
+    function performSearch() {
+        // Get the search input value
+        const searchInput = document.getElementById('searchInput').value;
+    
+        // Perform actions based on the search term (customize as needed)
+        if (searchInput.trim() !== '') {
+            alert('Performing search for: ' + searchInput);
+            // You can add more logic here, such as filtering content or navigating to a search results page
+        } else {
+            alert('Please enter a search term.');
+        }
+    }
+    function handleSecondButtonClick() {
+        // Add your logic for the second button click
+        alert('Second button clicked. You can customize this alert or add more logic.');
+    }
+    
 
     function showLoanModal() {
         const loanModal = document.getElementById('loanModal');
